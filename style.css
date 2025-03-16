@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #e4405f, #c13584);
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #c13584, #e4405f);
+}
+
+.tiktok {
+  background: linear-gradient(45deg, #000, #333);
+}
+
+.tiktok:hover {
+  background: linear-gradient(45deg, #333, #000);
+}
+
+.youtube {
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+}
+
+.youtube:hover {
+  background: linear-gradient(45deg, #cc0000, #ff0000);
+}
+
+/* Add icons (optional) */
+.btn::before {
+  font-family: 'Font Awesome 5 Brands'; /* Use Font Awesome for icons */
+  font-weight: 900;
+}
+
+.instagram::before {
+  content: '\f16d'; /* Instagram icon */
+}
+
+.tiktok::before {
+  content: '\e07b'; /* TikTok icon */
+}
+
+.youtube::before {
+  content: '\f167'; /* YouTube icon */
+}
